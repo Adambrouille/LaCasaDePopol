@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Casa De Popol</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="js" href="index.js">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+  <!--interfaces-->
+
+  <script>
+    //interface1//
+    $(function() {
+      var availableTags = [
+        "Audi",
+        "Mercedes",
+        "Amg",
+        "volkswagen",
+        "Renault",
+        "Volvo",
+        "Citroën",
+        "Mazda",
+        "Opel",
+        "Ford",
+        "Fiat",
+        "Ferrari",
+        "Peugeot",
+        "Polo",
+        "Golf",
+        "Alfa Romeo",
+        "Toyota",
+        "Nissan",
+        "Smart",
+        "Honda",
+        "Aston martin",
+        "Subaru",
+        "Tesla",
+        "Twingo"
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+    });
+
+  </script>
+
+  <!--fin de interfaces-->
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <h1><a href="index.html">La Casa De Popol</a><i class="fas fa-car"></i></h1>
+    <div class="onglets">
+        <p class="link"><a href="occasion.html">Occasion</a></p>
+        <p class="link"><a href="Location.html">Location</a></p>
+        <p class="link"><a href="luxe.html">Luxe</a></p>
+        <p class="link"><a href="offres.html">Offres</a></p>
+        <p class="link"><a href="pack.html">Pack</a></p>
+      <!--<form>
+        <input type="search" id="search" placeholder="Rechercher" onchange="recherche()">
+      </form>-->
+        <div class="input">
+            <!--<label for="tags"></label>-->
+            <input id="tags" placeholder="Rechercher">
+        </div>
+        <div class="icones">
+            <p><i class="far fa-heart"></i></p>
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+    </div>
+  </nav>
+  <!-- Fin de la barre de navigation -->
+  
+  <!-- Header -->
+   <header>
+     <h1>Roule ! Roule, avant que la vie ne te roule.</h1>
+     <button><a href="https://www.google.com/maps/dir/50.8189133,4.2916643/otacos+cora/@50.8183699,4.2757573,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c3c78c24f6b6b3:0xa103ce513b188006!2m2!1d4.2796777!2d50.8200798" target="_blank">Où nous touver ?</a> <i class="fas fa-route"></i></button>
+   </header>
+  <!-- Fin du header -->
+  
+  <!-- Section principale -->
+
+    <!-- Toutes les cartes -->
+  <section class="cartes">
+    <h3>Locations populaires</h3>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://www.automotivpress.fr/wp-content/uploads/2021/06/Ferrari-296-GTB-5.jpg">
+        <div class="card-header">
+          <h4 class="title">Ferrari 296 GTB</h4>
+          <h4 class="price">1000$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>puissance : 818(BHP), 0-100 : 2.9(s)</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://static.moniteurautomobile.be/imgcontrol/images_tmp/clients/moniteur/c680-d465/content/medias/images/cars/mercedes/s-class/mercedes--classe-s-berline--2023/mercedes--classe-s-berline--2023-m-5.jpg">
+        <div class="card-header">
+          <h4 class="title">Mercedes classe A</h4>
+          <h4 class="price">100$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>450 (ch)., 0-100 : 4.8(sec)</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://static.moniteurautomobile.be/imgcontrol/images_tmp/clients/moniteur/c520-d355/content/medias/images/cars/audi/a3/audi--a3-berline--2021/audi--a3-berline--2021-m-1.jpg">
+        <div class="card-header">
+          <h4 class="title">Audi A3</h4>
+          <h4 class="price">30$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>160(ch), 0-100 : 8(s)</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://images.caradisiac.com/logos-ref/modele/modele--bmw-serie-1-f40/S7-modele--bmw-serie-1-f40.jpg">
+        <div class="card-header">
+          <h4 class="title">BMW Série 1</h4>
+          <h4 class="price">25$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>116(ch), 0-100 : 13(s)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://autotijd.be/images/bmw/2020/1-reeks/prijzen/bmw-1-reeks-2020-prijzen-02.jpg">
+        <div class="card-header">
+          <h4 class="title">Polo GTI</h4>
+          <h4 class="price">25$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>120(ch), 0-100 : 12(s)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="citroen.html">
+            <img src="https://eveho.fra1.cdn.digitaloceanspaces.com/vehicles/1a18c81548/dms/base_77be24441acdd52d88fad113a7aebad5368a2c2.jpg">
+        </a>
+        <div class="card-header">
+          <h4 class="title">Citroën C3</h4>
+          <h4 class="price">3000$/jour</h4>
+        </div>
+        <div class="card-body">
+          <p>700(ch), 0-100 : 0.0001(s)</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cartes">
+    <h3>Nos vehicles de luxes</h3>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://www.automotivpress.fr/wp-content/uploads/2021/06/Ferrari-296-GTB-5.jpg">
+        <div class="card-header">
+          <h4 class="title">Ferrari 296 GTB</h4>
+          <h4 class="price">190.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>2.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://images0.persgroep.net/rcs/qKZP4tiAabvBIMJ5WQjLQ_sLICc/diocontent/220192804/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8">
+        <div class="card-header">
+          <h4 class="title">Lamborghini aventador</h4>
+          <h4 class="price">700.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>5.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://brussels.bentleymotors.com/picserver1/userdata/1/31595/3FAdVwEMPE/bentayga%20base%20gallery%201%201400x700.jpg">
+        <div class="card-header">
+          <h4 class="title">Bentley bentayga</h4>
+          <h4 class="price">150.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>7.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://www.autoscout24.be/cms-content-assets/7EmvxYShIpcuu3pZr9UOus-b5ab6a0cb65c1529a8341f3f7b8d4245-AS24-MMP-Porsche-Cayenne_01-1100.jpeg">
+        <div class="card-header">
+          <h4 class="title">Porsche cayenne</h4>
+          <h4 class="price">95.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>10.000 km au compteur</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.motor1.com/images/mgl/nGzgl/s1/2021-bugatti-chiron-front.jpg">
+        <div class="card-header">
+          <h4 class="title">Bugatti chiron</h4>
+          <h4 class="price">1.500.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>4.000 km au compteur</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.gaw.to/vehicles/photos/40/21/402110-2020-maserati-levante.jpg?1024x640">
+        <div class="card-header">
+          <h4 class="title">Maserati levante</h4>
+          <h4 class="price">80.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>6.000 km au compteur</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cartes">
+    <h3>Nos meilleurs occasions</h3>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/3d4027b3-db27-4341-8410-a74ca39ed5f5_e34c9bbc-bf55-461a-b2bc-bcff058914aa.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">Porsche 911</h4>
+          <h4 class="price">25.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>150.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/5a26e4f4-4776-401c-b7a8-5a78f83153f7_3c338768-0e67-4fc8-8985-d68d61619d7d.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">Audi TT</h4>
+          <h4 class="price">3.200$</h4>
+        </div>
+        <div class="card-body">
+          <p>250.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/1bda3e35-648e-4d74-97ae-989eedc7bcec_5c4e4128-bf5d-4895-be88-8767b8b75309.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">Mitsubishi Colt</h4>
+          <h4 class="price">5.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>40.000 km au compteur</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/940e7eb4-d3bd-4ef3-be3c-c90ade560c29_2ffdb423-06c7-43dd-8b55-17f93dc162d3.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">Mercedes-BenzE 200</h4>
+          <h4 class="price">19.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>130.000 km au compteur</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/227f0026-352d-4182-95d7-86815c065e45_c43fa24b-5e3a-49a1-a2fc-066a40b13bd2.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">BMW 330</h4>
+          <h4 class="price">9.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>150.000 km au compteur</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://prod.pictures.autoscout24.net/listing-images/68b7977a-8702-4b0b-9e30-4c5eadb81158_5ef48751-a8da-46dc-924e-0a79671b1bfd.jpg/720x540.webp">
+        <div class="card-header">
+          <h4 class="title">VolkswagenT7 Multivan</h4>
+          <h4 class="price">80.000$</h4>
+        </div>
+        <div class="card-body">
+          <p>400 km au compteur</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Fin de toutes les cartes -->
+    
+    <!-- Video de presentation -->
+  <section class="main">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/iRsV6YpLsKA" allowfullscreen></iframe>
+    </div>
+    <!-- Fin de la video de presentation -->
+  </section>
+  <!-- Fin de la section principale -->
+  
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; Contactez-nous au +32 488 10 39 96</p>
+    <div class="social-media">
+      <p><a class="social" href="https://www.facebook.com/adambrl99"><i class="fab fa-facebook-f" href="https://www.facebook.com/adambrl99"></i></a></p>
+      <p><a class="social" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a></p>
+      <p><a class="social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></p>
+      <p><a class="social" href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+
+</body>
+</html>
