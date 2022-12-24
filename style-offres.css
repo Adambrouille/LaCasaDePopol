@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* Barre de navigation */
+nav{
+    background:linear-gradient(to bottom right, rgb(77, 74, 73), silver);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+  font-size: 20px;
+  cursor: pointer;
+}
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+}
+nav .onglets p{
+  font-size: 17px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+nav .onglets p:hover{
+    font-weight: bolder;
+}
+nav .onglets input{
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border:none;
+  background-color: #f2f2f2;
+  outline:none;
+}
+.icones{
+    display:flex;
+    flex-wrap:wrap;
+  }
+.far:hover{
+    color: brown;
+}
+.fas:hover{
+    color: rgb(67, 35, 192);
+}
+ul{
+    background-color: #f2f2f2;
+    list-style: none;
+    padding: 0px;
+    max-width: 200px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    text-align:center;
+    position:fixed;
+}
+li:hover{
+    background-color: #827676;
+}
+span{
+    display: none;
+}
+  /* Fin de la barre de navigation */
+
+  /*header*/
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  font-size: 50px;
+  max-width: 500px;
+  text-align:center;
+}
+  /*fin de header*/
+
+  /* Pied de page */
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  footer .social-media{
+    display: flex;
+  }
+  .social{
+      color: #fff;
+  }
+  footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  /* Fin du pied de page */
+
+  @media screen and (max-width: 650px){
+
+    /*version mobile*/
+    
+    /*barre de navigation*/
+    
+      nav .onglets .link{
+        display: none;
+      }
+      nav .onglets input{
+        margin: 10px 0px;
+        padding: 10px;
+      }
+      .icones{
+        display:flex;
+        margin-left: 90px;
+      }
+      nav h1{
+        margin: 5px 0px;
+      }
+    
+    /*fin de barre de navigation*/
+    
+      .cards .card img{
+        width: 300px;
+      }
+    
+    /*fin de version mobile*/
+    }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Casa De Popol</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="style-citroen.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <h1><a href="index.html">La Casa De Popol</a><i class="fas fa-car"></i></h1>
+    <div class="onglets">
+        <p class="link"><a href="occasion.html">Occasion</a></p>
+        <p class="link"><a href="Location.html">Location</a></p>
+        <p class="link"><a href="luxe.html">Luxe</a></p>
+        <p class="link"><a href="offres.html">Offres</a></p>
+        <p class="link"><a href="pack.html">Pack</a></p>
+
+        <div class="input">
+            <!--<label for="tags"></label>-->
+            <input id="tags" placeholder="Rechercher">
+        </div>
+        <div class="icones">
+            <p><i class="far fa-heart"></i></p>
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+    </div>
+  </nav>
+  <!-- Fin de la barre de navigation -->
+
+  <!--header-->
+  <header>
+    <h1></h1>
+  </header>
+  <!--fin de header-->
+
+  <!--section principale-->
+<section>
+    <div class="cards">
+        <div class="card">
+            <img src="https://eveho.fra1.cdn.digitaloceanspaces.com/vehicles/1a18c81548/dms/base_77be24441acdd52d88fad113a7aebad5368a2c2.jpg">
+        </div>
+    </div>
+</section>
+
+<div class="card-header">
+    <h3>Citroën C3</h3>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+    <p>du texte</p>
+</div>
+
+  <!--fin de section principale-->
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; Contactez-nous au +32 488 10 39 96</p>
+    <div class="social-media">
+      <p><a class="social" href="https://www.facebook.com/adambrl99"><i class="fab fa-facebook-f" href="https://www.facebook.com/adambrl99"></i></a></p>
+      <p><a class="social" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a></p>
+      <p><a class="social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></p>
+      <p><a class="social" href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+
+  <!--interface-->
+  <script>
+
+    $(function() {
+      var availableTags = [
+        "Audi",
+        "Mercedes",
+        "Amg",
+        "volkswagen",
+        "Renault",
+        "Volvo",
+        "Citroën",
+        "Mazda",
+        "Opel",
+        "Ford",
+        "Fiat",
+        "Ferrari",
+        "Peugeot",
+        "Polo",
+        "Golf",
+        "Alfa Romeo",
+        "Toyota",
+        "Nissan",
+        "Smart",
+        "Honda",
+        "Aston martin",
+        "Subaru",
+        "Tesla",
+        "Twingo"
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+    });
+
+  </script>
+
+  <!--fin de interfaces-->
+
+</body>
+</html>
